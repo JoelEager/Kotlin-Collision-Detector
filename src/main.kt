@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     val iterations = args.getOrNull(0)?.toIntOrNull()
 
     if (iterations == null) {
-        println("Usage:\njava <kotlin args> MainKt <iterations>")
+        println("Usage:\njava [kotlin args] MainKt [iterations]")
         return
     }
 

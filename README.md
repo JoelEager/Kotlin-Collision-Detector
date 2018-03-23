@@ -12,7 +12,7 @@ Import this repo's contents into IntelliJ as a new Kotlin project.
 
 ## Usage
 ```bash
-java <kotlin args> MainKt <iterations>
+java [kotlin args] MainKt [iterations]
 ```
 
 ## Testing results
