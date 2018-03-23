@@ -42,30 +42,23 @@ fun runSAT(poly1: Array<Vector>, poly2: Array<Vector>): Boolean {
 /**
  * Returns a vector going from point1 to point2
  */
-fun edgeVector(point1: Vector, point2: Vector): Vector {
-    return Vector(point2.x - point1.x, point2.y - point1.y)
-}
+fun edgeVector(point1: Vector, point2: Vector) = Vector(point2.x - point1.x, point2.y - point1.y)
 
 /**
  * Returns an array of the edges of the poly as vectors
  */
-fun polyToEdges(poly: Array<Vector>): Array<Vector> {
-    return Array(poly.size, { index -> edgeVector(poly[index], poly[(index + 1) % poly.size]) })
-}
+fun polyToEdges(poly: Array<Vector>) = Array(poly.size,
+        { index -> edgeVector(poly[index], poly[(index + 1) % poly.size]) })
 
 /**
  * Returns a new vector which is orthogonal to the given vector
  */
-fun orthogonal(vector: Vector): Vector {
-    return Vector(vector.y, -vector.x)
-}
+fun orthogonal(vector: Vector) = Vector(vector.y, -vector.x)
 
 /**
  * Returns the dot (or scalar) product of the two vectors
  */
-fun dotProduct(vector1: Vector, vector2: Vector): Double {
-    return vector1.x * vector2.x + vector1.y * vector2.y;
-}
+fun dotProduct(vector1: Vector, vector2: Vector) = vector1.x * vector2.x + vector1.y * vector2.y
 
 /**
  * Returns a vector showing how much of the poly lies along the axis
@@ -78,6 +71,5 @@ fun project(poly: Array<Vector>, axis: Vector): Vector {
 /**
  * Returns a boolean indicating if the two projections overlap
  */
-fun overlap(projection1: Vector, projection2: Vector): Boolean {
-    return projection1.x <= projection2.y && projection2.x <= projection1.y
-}
+fun overlap(projection1: Vector, projection2: Vector) = projection1.x <= projection2.y &&
+        projection2.x <= projection1.y
