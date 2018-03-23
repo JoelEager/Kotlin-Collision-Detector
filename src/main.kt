@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     val iterations = args.getOrNull(0)?.toIntOrNull()
 
     if (iterations == null) {
-        println("Usage:\nkotlin-collision-detector <iterations>")
+        println("Usage:\njava <kotlin args> MainKt <iterations>")
         return
     }
 
