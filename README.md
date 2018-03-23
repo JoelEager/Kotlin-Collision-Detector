@@ -23,4 +23,4 @@ java <kotlin args> MainKt <iterations>
 | With max_dist   | 0.346 seconds   | 15.844 seconds    |
 | Without         | 0.767 seconds   | 40.617 seconds    |
 
-(See the Rust results [here](https://github.com/JoelEager/Rust-Collision-Detector/blob/master/README.md).)
+(See the Rust results [here](https://github.com/JoelEager/Rust-Collision-Detector#testing-results).)
