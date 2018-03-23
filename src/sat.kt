@@ -1,6 +1,6 @@
 import kotlin.math.pow
 
-class Vector(val x: Double, val y: Double)
+class Vector(var x: Double, var y: Double)
 
 /**
  * @param poly1, poly2 The two polygons described as arrays of points as Vectors
