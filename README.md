@@ -5,7 +5,8 @@ This is a Kotlin port of the collision detection logic used by pyTanks
 [here](https://github.com/JoelEager/pyTanks.Server/blob/master/gameLogic/collisionDetector.py). Both this 
 implementation and the Python implementation located there are configured to test the execution time of this algorithm.
 
-This algorithm has also been ported to Rust [here](https://github.com/JoelEager/Rust-Collision-Detector).
+This algorithm has also been ported to Rust [here](https://github.com/JoelEager/Rust-Collision-Detector) and Java 
+[here](https://github.com/JoelEager/Java-Collision-Detector).
 
 ## Setup
 Import this repo's contents into IntelliJ as a new Kotlin project.
@@ -29,5 +30,3 @@ java [kotlin args] MainKt [iterations]
 | --------------- | --------------- | ----------------- |
 | With max_dist   | 0.346 seconds   | 15.844 seconds    |
 | Without         | 0.767 seconds   | 40.617 seconds    |
-
-(See the Rust results [here](https://github.com/JoelEager/Rust-Collision-Detector#testing-results).)
